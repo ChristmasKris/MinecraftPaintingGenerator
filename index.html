@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="icon" type="image/x-icon" href="./media/favicon.ico"/>
+		<title>Minecraft painting generator</title>
+		<link rel="stylesheet" type="text/css" href="./general.css"/>
+		<link rel="stylesheet" type="text/css" href="./index.css"/>
+	</head>
+	<body>
+		<a href="" class="downloadLink" download></a>
+		<input type="file" accept=".jpg, .jpeg, .png, .webp" class="imageInput"/>
+		<div class="page">
+			<h1>Minecraft painting generator</h1>
+			<div class="editor">
+				<div class="settings">
+					<div class="subtitle">
+						<h2>Configuration</h2>
+					</div>
+					<div class="settingHolder">
+						<span class="step">1.</span>
+						<select>
+							<option value="1x1">1x1 (square)</option>
+							<option value="1x2">1x2 (portrait)</option>
+							<option value="2x1">2x1 (landscape)</option>
+							<option value="2x2">2x2 (square)</option>
+							<option value="2x3">2x3 (portrait)</option>
+							<option value="2x4">2x4 (portrait)</option>
+							<option value="3x2">3x2 (landscape)</option>
+							<option value="3x3">3x3 (square)</option>
+							<option value="3x4">3x4 (portrait)</option>
+							<option value="3x5">3x5 (portrait)</option>
+							<option value="3x6">3x6 (portrait)</option>
+							<option value="4x2">4x2 (landscape)</option>
+							<option value="4x3">4x3 (landscape)</option>
+							<option value="4x4">4x4 (square)</option>
+							<option value="4x5">4x5 (portrait)</option>
+							<option value="4x6">4x6 (portrait)</option>
+							<option value="5x3">5x3 (landscape)</option>
+							<option value="5x4">5x4 (landscape)</option>
+							<option value="5x5">5x5 (square)</option>
+							<option value="5x6">5x6 (portrait)</option>
+							<option value="6x3">6x3 (landscape)</option>
+							<option value="6x4">6x4 (landscape)</option>
+							<option value="6x5">6x5 (landscape)</option>
+							<option value="6x6">6x6 (square)</option>
+						</select>
+						<span>Select painting size</span>
+					</div>
+					<div class="settingHolder">
+						<span class="step">2.</span>
+						<button class="uploadImageButton">Upload image</button>
+						<span>Upload an image from your computer</span>
+					</div>
+					<label class="settingHolder clickable" for="containCheckbox" title="Click to check/uncheck">
+						<span class="step">3.</span>
+						<input type="checkbox" id="containCheckbox"/>
+						<span>Check this to fit the entire image in the painting without covering the whole painting.</span>
+					</label>
+					<label class="settingHolder clickable" for="borderColorPicker" title="Click to pick a border color">
+						<span class="step">4.</span>
+						<input type="color" id="borderColorPicker" value="#000000"/>
+						<div class="colorInputDisplay borderColorInputDisplay"></div>
+						<span>Pick a border color</span>
+					</label>
+					<label class="settingHolder clickable" for="backgroundColorPicker" title="Click to pick a background color">
+						<span class="step">5.</span>
+						<input type="color" id="backgroundColorPicker" value="#000000"/>
+						<div class="colorInputDisplay backgroundColorInputDisplay"></div>
+						<span>Pick a background color if your image is transparent or does not cover the whole painting.</span>
+					</label>
+					<div class="settingHolder">
+						<span class="step">6.</span>
+						<button class="downloadButton">Download painting</button>
+						<span>Download your generated painting</span>
+					</div>
+				</div>
+				<div class="template">
+					<img src="./media/templates/1x1.png" class="templateImage"/>
+					<div class="canvasBackground"></div>
+					<canvas class="canvas"></canvas>
+				</div>
+			</div>
+			<div class="paintings">
+				<div class="subtitle">
+					<h2>Original paintings</h2>
+				</div>
+			</div>
+		</div>
+		<script src="./general.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>

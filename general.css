@@ -1,0 +1,111 @@
+/* Fonts ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('./fonts/Roboto-Light.ttf');
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('./fonts/Roboto-Regular.ttf');
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('./fonts/Roboto-Medium.ttf');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('./fonts/Roboto-Bold.ttf');
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+	font-family: 'Minecraft';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/Minecraft.woff');
+}
+
+
+/* Global variables ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+:root {
+	--black: #000000;
+	--greyDark2: #212121;
+	--greyDark: #2c2c2c;
+	--grey: #373737;
+	--placeholder: #737373;
+	
+	--white: #ffffff;
+	--orange: #ff9900;
+	--red: #c8362d;
+	--redDark: #a62c26;
+	--green: #48b443;
+	--greenDark: #3c9537;
+	--blue: #2271ac;
+	--blueDark: #1b5a8a;
+	
+	--tableBorderColor: #bfbfbf;
+	
+	--shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	--bottomShadow: 0 6px 10px rgba(0, 0, 0, 0.19), 0 4px 4px rgba(0, 0, 0, 0.23);
+	
+	--pageBackgroundColor: #121212;
+	--backgroundColor: #1e1e1e;
+	--inputBorderColor: #444444;
+	--buttonHoverColor: #444444;
+	--buttonBackgroundColor: #333333;
+	
+	--scrollbarCompensation: 0px;
+}
+
+/* Global element styles ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+	margin: 0;
+	font-size: 0;
+	background-color: var(--pageBackgroundColor);
+	height: 100%;
+}
+
+input[type="color"] {
+	visibility: none;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 80%;
+	left: 100px;
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.colorInputDisplay {
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	background-color: #000000;
+	margin-right: 20px;
+}
+
+.downloadLink {
+	display: none;
+}
